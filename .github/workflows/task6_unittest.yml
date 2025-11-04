@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Requirements
-        uses: "./requirements.txt"
+        uses: python -m requirements.txt
 
       - name: Run Unit Tests
         run: python -m unittest test_calculator.py
